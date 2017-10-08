@@ -1,0 +1,7 @@
+# Site settings
+title: ghostmode
+permalink: /posts/:title
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-hydeout
