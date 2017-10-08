@@ -27,7 +27,7 @@ public class IntGrid {
 
 That’s all you need to get Unity to serialize your 2D array and have it show up in the inspector.
 
-Let’s overload the `[,]` operator so we can get and set data the way we’re used to.
+Let’s overload the `[,]` operator so we can access our data the way we’re used to.
 
 {% highlight csharp %}
 [System.Serializable]
