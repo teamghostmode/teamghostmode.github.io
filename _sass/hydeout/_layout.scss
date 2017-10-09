@@ -37,20 +37,16 @@ body {
   font-size: 0.8rem;
 
   .site-title {
-    font-family: "Abril Fatface", serif;
+    font-family: 'Modak', cursive;
     font-weight: normal;
     font-size: 2.7rem;
     color: #fff;
     margin-top: 0;
     margin-bottom: 1rem;
 
-    a {
-      color: inherit;
-      &:hover {
-        color: white;
-        text-decoration: none;
-        color: #2a3f49;
-      }
+    a:hover, a:focus {
+      text-decoration: none;
+      color: $sidebar-link-color;
     }
   }
 
@@ -64,6 +60,11 @@ body {
 
     li {
       padding-top: 0.2rem;
+
+    }
+
+    a:hover, a:focus {
+      color: $sidebar-link-color;
     }
   }
 }
