@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using billboards with SEGI"
+title:  "Using Billboards With SEGI"
 ---
 So you’ve grabbed the [newly open sourced SEGI](https://forum.unity.com/threads/segi-fully-dynamic-global-illumination.410310/) (Sonic Ether Global Illumination) asset. You love that you don’t have to bake for 30 hours every time you make a change in your scene, but now your billboard particles and line renderers don’t face the camera!
 
