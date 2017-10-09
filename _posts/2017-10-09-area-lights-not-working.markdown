@@ -13,4 +13,4 @@ You can do this by opening the lighting settings window (Window → Lighting →
   <figcaption>Click 'Generate Lighting' to bake a lightmap</figcaption>
 </figure>
 
-Unity will start baking a lightmap, and it may take a while! But once it’s done, your area lights should now be contributing to your scene's lighting like you'd expect.
+Unity will start baking a lightmap, and it may take a while! But once it’s done, your area lights should working like you'd expect.
