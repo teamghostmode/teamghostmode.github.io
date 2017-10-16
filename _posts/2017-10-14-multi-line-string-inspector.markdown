@@ -16,7 +16,7 @@ public string Dialog;
 {% endhighlight %}
 
 <figure>
-  <img src="{{site.url}}/assets/images/multi_line_string_inspector.png" alt="String Inspector"/>
+  <img src="{{site.url}}/assets/images/multi-line-string-inspector.png" alt="String Inspector"/>
   <figcaption>Multi-line textarea in the inspector</figcaption>
 </figure>
 
@@ -30,6 +30,6 @@ public string[] Dialogs;
 {% endhighlight %}
 
 <figure>
-  <img src="{{site.url}}/assets/images/multi_line_string_array_inspector.png" alt="String Array Inspector"/>
+  <img src="{{site.url}}/assets/images/multi-line-string-array-inspector.png" alt="String Array Inspector"/>
   <figcaption>An array of multi-line textareas in the inspector</figcaption>
 </figure>

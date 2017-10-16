@@ -9,7 +9,7 @@ Unity’s area lights work a little differently. Their lighting calculation is v
 You can do this by opening the lighting settings window (Window → Lighting → Settings), and clicking ‘Generate Lighting’ at the very bottom. If the button is greyed out, you’ll need to uncheck ‘Auto Generate’ first.
 
 <figure>
-  <img src="{{site.url}}/assets/images/generate_lighting.png" alt="Generate Lighting"/>
+  <img src="{{site.url}}/assets/images/generate-lighting.png" alt="Generate Lighting"/>
   <figcaption>Click 'Generate Lighting' to bake a lightmap</figcaption>
 </figure>
 

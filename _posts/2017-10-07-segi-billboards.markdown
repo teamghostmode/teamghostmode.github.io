@@ -12,6 +12,6 @@ Fortunately there’s an easy fix, using layers and SEGI’s GI Culling Mask.
 4. Uncheck “BillboardFX” in the GI Culling Mask dropdown.
 
 <figure>
-  <img src="{{site.url}}/assets/images/SEGI_billboards.png" alt="SEGI Billboards"/>
+  <img src="{{site.url}}/assets/images/SEGI-billboards.png" alt="SEGI Billboards"/>
   <figcaption>The GI Culling Mask dropdown in SEGI's main configuration</figcaption>
 </figure>

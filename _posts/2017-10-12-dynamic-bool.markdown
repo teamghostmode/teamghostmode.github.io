@@ -23,7 +23,7 @@ public void OnMuteToggled(bool isChecked) {
 Now here’s the trick. When selecting the `OnMuteToggled` function in the toggle’s inspector, make sure you select the one under ‘Dynamic bool’.
 
 <figure>
-  <img src="{{site.url}}/assets/images/dynamic_bool.png" alt="Dynamic Bool"/>
+  <img src="{{site.url}}/assets/images/dynamic-bool.png" alt="Dynamic Bool"/>
   <figcaption>Select the function listed under 'Dynamic bool'</figcaption>
 </figure>
 
