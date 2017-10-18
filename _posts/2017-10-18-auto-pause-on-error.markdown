@@ -13,4 +13,4 @@ Unity has an easily overlooked feature called ‘Error Pause’, you’ll find t
   <figcaption>Turn on 'Error Pause' above the console</figcaption>
 </figure>
 
-No longer will an error go unnoticed in the console! And better still, it’s immensely helpful to know the exact moment an error occurred, /and/ be able to inspect the game’s state at the time of error.
+No longer will an error go unnoticed in the console! And better still, it’s immensely helpful to know the exact moment an error occurred, *and* be able to inspect the game’s state at the time of error.
