@@ -5,21 +5,6 @@
   Hydeout features the large colored sidebar from Hyde that houses the
   site name, intro, and "footer" content. Sidebar is on top of content on
   mobile and expands into sidebar on larger width displays.
-
-  Sidebar CSS assumes HTML looks like this for post pages:
-
-    body
-    > #sidebar
-      > header (primary sidebar content -- i.e. title)
-        > h1 (home page only, otherwise div or span)
-      > secondary nav content we may want to hide on certain pages
-    > .container
-      > h1 (non-home page)
-      > .content
-
-  Basic approach is to color in body, make sidebar background transparent,
-  and then fill in the .container or .content elements depending on how far
-  we want the sidebar or header to stretch.
 */
 
 body {
@@ -44,27 +29,14 @@ body {
     margin-top: 0;
     margin-bottom: 0.4rem;
 
-    a:hover, a:focus {
-      text-decoration: none;
-      color: $sidebar-link-color;
-    }
-  }
 
-  .links {
-    margin-top: 2rem;
+    a {
+      color: white;
 
-    ul {
-      font-size: 0.7rem;
-      padding-left: 1rem;
-    }
-
-    li {
-      padding-top: 0.2rem;
-
-    }
-
-    a:hover, a:focus {
-      color: $sidebar-link-color;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: $sidebar-link-color;
+      }
     }
   }
 }
@@ -91,14 +63,39 @@ body {
   color: $body-color;
 }
 
+.links {
+  margin-top: 2rem;
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  li {
+    padding-top: 0.2rem;
+
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      color: $sidebar-link-color;
+    }
+  }
+}
+
+#footer {
+  flex: 0 0 auto;
+  padding: 0 2rem 1rem;
+}
 
 /* -----------------------------------------------------------
   Mobile view
 ----------------------------------------------------------- */
 
 #sidebar {
-
-  // Center sidebar content
   text-align: center;
 
   // Show secondary nav content + lead
@@ -115,7 +112,20 @@ body {
       display: flex;
     }
   }
+}
 
+#footer {
+  display: block;
+
+  .links {
+    ul {
+      font-size: 0.9rem;
+    }
+
+    li {
+      padding-top: 0.2rem;
+    }
+  }
 }
 
 
@@ -145,12 +155,6 @@ body {
   #sidebar {
     padding: 3.8rem 2rem;
 
-    .site-title {
-
-      a { color: white; }
-      .back-arrow { display: none; }
-    }
-
     p.lead, header ~ * {
       display: block;
     }
@@ -161,6 +165,10 @@ body {
 
     .links {
       display: block;
+
+      ul {
+        font-size: 0.7rem;
+      }
     }
   }
 
@@ -186,95 +194,8 @@ body {
       padding: 0;
     }
   }
-}
 
-
-/* -----------------------------------------------------------
-  Sidebar links + nav
------------------------------------------------------------ */
-
-#sidebar a {
-  color: #fff;
-
-  svg {
-    fill: rgba(255, 255, 255, 0.85);
-  }
-
-  &:hover, &:focus, &.active {
-    svg { fill: #fff; }
-  }
-
-  &:hover, &:focus {
-    text-decoration: underline;
-    &.icon {
-      text-decoration: none;
-    }
-  }
-
-  &.active {
-    font-weight: bold;
-  }
-}
-
-#sidebar nav {
-  display: flex;
-}
-
-#sidebar-nav-links {
-  flex-flow: column nowrap;
-}
-
-#sidebar-icon-links {
-  max-width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-top: 1rem;
-
-  @media (min-width: $large-breakpoint) {
-    margin-left: -0.25em;
-    justify-content: flex-start;
-  }
-}
-
-#sidebar nav > * {
-  display: block;
-  line-height: 1.75;
-}
-
-#sidebar nav > .icon {
-  font-size: 1.5rem;
-  display: inline-block;
-  margin: 0 0.25em;
-}
-
-
-/* -----------------------------------------------------------
-  Sticky sidebar
-
-  Set $sidebar-stick variable to affix sidebar contents to the
-  bottom of the sidebar in tablets and up.
------------------------------------------------------------ */
-
-@if $sidebar-sticky {
-  @media (min-width: $large-breakpoint) {
-    body {
-      align-items: flex-end;
-    }
-  }
-}
-
-
-/* -----------------------------------------------------------
-  Reverse layout
-
-  Flip the orientation of the page by placing the `#sidebar`
-  on the right.
------------------------------------------------------------ */
-
-@if $layout-reverse {
-  @media (min-width: $large-breakpoint) {
-    .container {
-      order: -1;
-    }
+  #footer {
+    display: none;
   }
 }
