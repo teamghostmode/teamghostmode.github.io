@@ -6,7 +6,7 @@ We’ve all had it happen, your game spits an error into the console at runtime 
 
 Hopefully you’ll notice it at some point and think “When the hell did that happen?”, but it’s also possible that you’ll just miss it entirely.
 
-Unity has an easily overlooked feature called ‘Error Pause’, you’ll find the button along the top of the console. Turning on ‘Error Pause’ will automatically pause execution of your game the instant an error is logged (including unhandled exceptions and failed assertions).
+Unity has an easily overlooked option called ‘Error Pause’, you’ll find the button along the top of the console. Turning on ‘Error Pause’ will automatically pause execution of your game the instant an error is logged (including unhandled exceptions and failed assertions).
 
 <figure>
   <img src="{{site.url}}/assets/images/auto-pause-on-error.png" alt="Auto-Pause On Error"/>
