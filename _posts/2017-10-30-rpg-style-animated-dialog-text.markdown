@@ -60,7 +60,7 @@ public class AnimatedDialog : MonoBehaviour {
 
 <span class="muted">(Note that we [don’t use strings to start the coroutine]({% post_url 2017-10-19-dont-start-coroutines-with-strings %}))</span>
 
-Attach the `AnimatedDialog` class to a UI Text component, and be sure to set the `TextField` reference in the inspector.
+Attach both an `AnimatedDialog` component and a UI `Text` component to a game object, and be sure to set the `TextField` reference in the inspector.
 
 Now, call the public `AnimateText` function with the text you want to animate. For example, an `NPC` class could use the `AnimatedDialog` class as follows:
 {% highlight csharp %}
