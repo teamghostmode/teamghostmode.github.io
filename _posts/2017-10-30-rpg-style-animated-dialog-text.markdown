@@ -2,7 +2,7 @@
 layout: post
 title: "RPG Style Animated Dialog Text"
 ---
-*Question: How do I get the text in my dialog boxes to type out character by character, to give the speaking effect seen in many RPG and adventure games?*
+*Question: In Unity, how do I get the text in my dialog boxes to type out character by character, to give the speaking effect seen in many RPG games?*
 
 Using an animated 'talking' effect like this is very common, and dialog screens can look a little off without it. It’s a little detail that can make all the difference.
 
@@ -11,7 +11,7 @@ Using an animated 'talking' effect like this is very common, and dialog screens 
   <figcaption>Animated dialog text</figcaption>
 </figure>
 
-So how do you go about it? Getting text to display all at once is simple enough, but when it comes to animating the text, it's hard to know where to even start. That is, until you get familiar with coroutines.
+So how do you go about doing this in Unity? Getting text to display all at once is simple enough, but when it comes to animating the text, it's hard to know where to even start. That is, until you get familiar with Unity's coroutines.
 
 Any time you want an action to occur over multiple frames (instead of all at once), coroutines are often a good approach. Coroutines let you use the `yield` keyword, which pauses the execution of a function for a specified time (while the rest of the game keeps running).
 
