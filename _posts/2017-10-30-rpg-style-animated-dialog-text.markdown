@@ -4,7 +4,7 @@ title: "RPG Style Animated Dialog Text"
 ---
 *Question: In Unity, how do I get the text in my dialog boxes to type out character by character, to give the speaking effect seen in many RPG games?*
 
-Using an animated 'talking' effect like this is very common, and dialog screens can look a little off without it. It’s a little detail that can make all the difference.
+Using an animated 'talking' effect like this is very common, and dialog screens can look a little off without it. It’s a small detail, but it can make all the difference.
 
 <figure>
   <iframe src='https://gfycat.com/ifr/FaintFirsthandDiscus' frameborder='0' scrolling='no' width='319' height='95'></iframe>
