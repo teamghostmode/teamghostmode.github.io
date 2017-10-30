@@ -125,3 +125,9 @@ a svg, .icon svg {
 }
 a svg { fill: $link-color; }
 .icon { vertical-align: middle; }
+
+.muted {
+  font-size: 0.8rem;
+  color: #AAA;
+  font-style: italic;
+}
