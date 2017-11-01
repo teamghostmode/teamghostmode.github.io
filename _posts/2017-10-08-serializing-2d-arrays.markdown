@@ -16,12 +16,12 @@ Let’s use a 2D array of ints as an example, we’ll call it an ‘IntGrid’.
 [System.Serializable]
 public class IntGrid {
 
-	[System.Serializable]
-	public class IntRow {
-		public int[] Cols; // The wrapped array.
-	}
+    [System.Serializable]
+    public class IntRow {
+        public int[] Cols; // The wrapped array.
+    }
 
-	public IntRow[] Rows; // The 2D array.
+    public IntRow[] Rows; // The 2D array.
 }
 {% endhighlight %}
 
@@ -33,12 +33,12 @@ Let’s overload the `[,]` operator so we can access our data the way we’re us
 [System.Serializable]
 public class IntGrid {
 
-	...
+    ...
 
-	public int this[int rowIndex, int colIndex] {
-		get { return Rows[rowIndex].Cols[colIndex]; }
-		set { Rows[rowIndex].Cols[colIndex] = value; }
-	}
+    public int this[int rowIndex, int colIndex] {
+        get { return Rows[rowIndex].Cols[colIndex]; }
+        set { Rows[rowIndex].Cols[colIndex] = value; }
+    }
 }
 {% endhighlight %}
 
