@@ -12,7 +12,7 @@ Games like Undertale occasionally use a shaking text effect when displaying dial
  
 So how do you implement this shaking text effect in Unity? It’s not too hard to animate a block of text all together, but how do you get each character to move individually?
 
-First, you have to break up your text so each character is a seperate game object. That way they each have a seperate transform and can be moved around independently.
+First, just as with the [wavy text effect]({% post_url 2017-11-01-animated-wavy-text-effect %}), you have to break up your text so each character is a seperate game object. That way they each have a seperate transform and can be moved around independently.
 
 Then attach the following `ShakeEffect` script to each game object:
 
