@@ -15,7 +15,7 @@ float xOffset = Random.Range(0.0f, maxOffset);
 float yOffset = Random.Range(0.0f, maxOffset);
 {% endhighlight %}
 
-(Tweak the max offset value until you find one that gives good results for your project)
+(Tweak the max offset until you find one that gives good results for your project)
 
 Then we simply offset our x and y values before sampling:
 
@@ -81,4 +81,4 @@ public class RandomPerlinNoise : MonoBehaviour {
 }
 {% endhighlight %}
 
-Just attach this script to a plane, and run the project. A new perlin noise texture will be generated every frame.
+Just attach this script to a plane, and run the project. A random perlin noise texture will be generated every frame.
