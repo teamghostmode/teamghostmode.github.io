@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Random Perlin Noise"
+title: "Unity Tip: Random Perlin Noise"
 ---
 
 How do you use Unity’s Mathf.PerlinNoise to generate random noise?
